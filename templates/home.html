@@ -1,0 +1,119 @@
+<!DOCTYPE html> {% load staticfiles %}
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Civilized Technologies.LTD</title>
+    <!--StyleSheet Area-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="stylesheet" href="{% static 'css/home.css' %}">
+    <link rel="stylesheet" href="{% static 'css/device-size.css' %}">
+    <link rel="stylesheet" href="{% static 'fonts/Metamorphous-Regular.ttf' %}">
+    <link rel="stylesheet" href="{% static 'css/radial-menu.css' %}">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
+        crossorigin="anonymous">
+    <!--Stylesheet Arear end-->
+</head>
+
+<body>
+    <!--header start-->
+    <header>
+        <div class="row">
+            <!--logo-->
+            <div class="col-sm-2">
+                <img src="{% static 'images/loder-front.svg' %}" alt="" class="logo" srcset="">
+            </div>
+            <!--navbar start-->
+            <div class="col">
+                <ul>
+                    <li>
+                        <a class="active" href="#home">Home</a>
+                    </li>
+                    <li>
+                        <a href="#news">About us</a>
+                    </li>
+                    <li>
+                        <a href="#" onmouseover="showDiv()">Revolution of services </a>
+                    </li>
+                    <li>
+                        <a href="#about">Corporate responsibility</a>
+                    </li>
+                    <li>
+                        <a href="#">Blog</a>
+                    </li>
+                    <li>
+                        <a href="#">Join us /Career</a>
+                    </li>
+                    <li>
+                        <a href="#">Contact us</a>
+                    </li>
+                </ul>
+
+            </div>
+
+            <!--navbar end-->
+        </div>
+
+    </header>
+    <main>
+        <section>
+            <!--dropdown Start-->
+            <div class="dropdown-area" id="dorp">
+                <div class="close" onclick="closeitem()">
+                    <span>
+                        <i class="fas fa-times"></i>
+                    </span>
+                </div>
+                <!--radial menu Start-->
+                <nav class="circular-menu">
+                    <div class="circle">
+
+                        <a href="" class="fa fa-home fa-2x"></a>
+
+                        <a href="" class="fa fa-facebook fa-2x"></a>
+
+                        <a href="" class="fa fa-twitter fa-2x"></a>
+
+                        <a href="" class="fa fa-linkedin fa-2x"></a>
+
+                        <a href="" class="fa fa-github fa-2x"></a>
+
+                        <a href="" class="fa fa-rss fa-2x"></a>
+
+                        <a href="" class="fa fa-pinterest fa-2x"></a>
+
+                        <a href="" class="fa fa-asterisk fa-2x"></a>
+
+                    </div>
+                    <a href="" class="menu-button fa fa-bars fa-2x"></a>
+                </nav>
+
+                <!--radial menu End-->
+            </div>
+            <!--dropdown End-->
+        </section>
+    </main>
+    <!--header End-->
+    <!--Javascript Area-->
+    <script src="{% static 'js/radial.js' %}"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script>
+        function showDiv() {
+            document.getElementById('dorp').style.display = "block";
+        }
+
+        function closeitem() {
+            document.getElementById('dorp').style.display = "none";
+        }
+    </script>
+</body>
+
+</html>
