@@ -15,11 +15,19 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from . import views
+from civilized_app.views import IndexView,HomePage,AboutView,JobsView,DesktopView,DigitalView,WebAppView,ManagementView,MobileView,NetworkingView
 from django.conf import settings
 from django.conf.urls.static import static
 urlpatterns = [
-    path('',views.IndexView.as_view(), name='index'),
-    path('home',views.Home.as_view(), name='home'),
+    path('',IndexView.as_view(), name='index'),
+    path('home',HomePage, name='home'),
+    path('about/',AboutView.as_view(), name = 'about'),
+    path('jobs/', JobsView.as_view(), name='jobs'),
+    path('management/', ManagementView.as_view(), name='management'),
+    path('mobile/', MobileView.as_view(), name='mobile'),
+    path('desktop/', DesktopView.as_view(), name='desktop'),
+    path('digital/', DigitalView.as_view(), name='digital'),
+    path('webapp/', WebAppView.as_view(), name='webapp'),
+    path('network/', NetworkingView.as_view(), name='network'),
 ]
 #+ static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

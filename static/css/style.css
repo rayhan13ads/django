@@ -22,15 +22,11 @@ header
 
 header {
     position: relative;
-    background-color: #fff;
+    background-color: rgb(38, 51, 58);
     width: 100%;
-    height: 2.90%;
-    border-bottom: .2rem solid green;
+    height: 80px;
     margin: 0;
     padding: 0;
-    -webkit-box-shadow: -2px 4px 35px -4px rgba(0,0,0,0.75);
-    -moz-box-shadow: -2px 4px 35px -4px rgba(0,0,0,0.75);
-    box-shadow: -2px 4px 35px -4px rgba(0,0,0,0.75);
     z-index: 99;
 }
 
@@ -40,37 +36,51 @@ logo
 
 .logo {
     position: absolute;
-    top: 3%;
-    left: 0;
+    top: 20%;
+    left: 15%;
     margin-left: 2rem;
-    width: 50%;
-    height: 5rem;
+    width: 50px;
+    height: 3rem;
 }
-
+.logo-text{
+    position: absolute;
+    top: 30%;
+    left: 30%;
+    margin-left: 2rem;
+    width: 70%;
+    height: 3rem;
+    color: #fff;
+    font-family: 'Oswald', sans-serif; 
+}
+.logo-text span{
+    color: green;
+    margin-left: 5%;
+}
 /*============================================
     navbar
 ==============================================*/
-
 .navCustom {
     display: inline-block;
-    color: black;
     text-align: center;
-    padding: 18px 10px;
+    padding: 18px 5px;
     text-decoration: none;
     font-size: 20px;
-    font-family: 'Metamorphous', cursive;
+    font-family: 'Oswald', sans-serif;
+}
+/*font-family: 'Merriweather', serif;*/
+.font-color{
+    color: #000;
 }
 
 nav {
-    height: 100px;
-    margin: -2%;
+    height: 80px;
 }
 
-/* button hover style if required */
+/* button hover style if required background-color: rgb(80, 163, 80); */
 
 .navCustom:hover {
-    margin-top: -2;
-    background-color: rgba(3, 24, 3, 0.247);
+    background-color: rgb(80, 163, 80);
     text-decoration: none;
-    color: black;
+    font-size: 20px; 
+    color:#000;
 }
