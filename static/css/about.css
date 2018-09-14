@@ -39,16 +39,16 @@
 .jobs-header {
     position: relative;
     width: 100%;
-    height: 30rem;
+    height: 29.5rem;
     background: url('/static/images/careers.png') no-repeat;
     background-attachment: fixed;
-    background-size: cover;
+    background-size: contain;
 }
 
 .news-header {
     position: relative;
     width: 100%;
-    height: 10rem;
+    height: 20rem;
     background: #3b0653;
     background-attachment: fixed;
     background-size: contain;
@@ -70,49 +70,70 @@
     font-size: 80px;
 }
 
-.toper-body {
-    position: absolute;
-    top: 15%;
-    left: 40%;
-    width: 200px;
-    height: 200px;
-    border-radius:50%; 
-    background-color:whitesmoke;
-    -webkit-box-shadow: 3px 3px 17px -4px rgba(0, 0, 0, 0.75);
-    -moz-box-shadow: 3px 3px 17px -4px rgba(0, 0, 0, 0.75);
-    box-shadow: 3px 3px 17px -4px rgba(0, 0, 0, 0.75);
-    z-index: 99;
+
+
+.top-m {
+    margin-top: 5%;
 }
-.news-img{
-    position: relative;
+
+.b-weight {
     width: 130px;
     height: auto;
-    top: 17%;
-    left: 18%;
-     
 }
-.top-m{
-    margin-top: 15%;
-}
-.b-weight{
-    width: 130px;
-    height: auto;
-    border-radius:50%; 
-    border: 5px solid green;
-}
-.img-center{
+
+.img-center {
     width: 150px;
     height: auto;
     margin: 30px auto 20px auto;
 }
-.card-center{
+
+.card-center {
     margin-left: auto;
     margin-right: auto;
 }
-.upload-sucess{
+
+.upload-sucess {
     margin-top: 30%;
     width: 200px;
     height: auto;
     position: relative;
-    
+
+}
+
+.j-ul {
+    list-style: none;
+    position: relative;
+    left: -2%;
+}
+
+.j-box {
+    width: 70px;
+    height: 80px;
+    background-color: white;
+    border: 3px solid black;
+}
+
+.j-box1 {
+    position: absolute;
+    left: 0%;
+    width: 100%;
+    height: auto;
+    margin: 2.5% 10% 0 0; 
+    padding: 1%;
+    background-color: rgb(245, 227, 125);
+    -webkit-box-shadow: 10px 2px 17px -7px rgba(0, 0, 0, 0.63);
+    -moz-box-shadow: 10px 2px 17px -7px rgba(0, 0, 0, 0.63);
+    box-shadow: 10px 2px 17px -7px rgba(0, 0, 0, 0.63);
+}
+.j-positionBox{
+    width: 50px;
+    height: auto;
+    margin: 15% auto 0 auto;
+}
+.j-img-size{
+    width: 50px;
+    height: auto;
+}
+.j-top-m{
+    margin-top: 10%;
 }

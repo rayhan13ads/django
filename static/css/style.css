@@ -39,14 +39,14 @@ logo
     top: 20%;
     left: 15%;
     margin-left: 2rem;
-    width: 50px;
+    width: 45px;
     height: 3rem;
 }
 .logo-text{
     position: absolute;
     top: 30%;
     left: 30%;
-    margin-left: 2rem;
+    margin-left: 1rem;
     width: 70%;
     height: 3rem;
     color: #fff;
