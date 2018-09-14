@@ -1,11 +1,12 @@
-.about-header{
+.about-header {
     position: relative;
     width: 100%;
     height: 20rem;
     background: url('/static/images/about-bg.jpg') no-repeat;
     background-attachment: fixed;
-    background-size: contain; 
+    background-size: contain;
 }
+
 .about-textStyle {
     font-size: 25px;
     text-align: justify;
@@ -13,15 +14,105 @@
     font-family: 'Oswald', sans-serif;
     margin: 0 auto 5% auto;
 }
-.subtitle{
+
+.subtitle {
     font-size: 30px;
 }
 
-.card-style{
+.card-style {
     width: 400px;
     margin: 0;
     height: 80px;
     border: 0;
     border-radius: 5%;
     background-color: crimson;
+}
+
+.management-title {
+    text-align: center;
+    font-family: 'Kaushan Script', cursive;
+    font-size: 30px;
+    font-weight: 500;
+    color: rgb(20, 220, 127);
+}
+
+.jobs-header {
+    position: relative;
+    width: 100%;
+    height: 30rem;
+    background: url('/static/images/careers.png') no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.news-header {
+    position: relative;
+    width: 100%;
+    height: 10rem;
+    background: #3b0653;
+    background-attachment: fixed;
+    background-size: contain;
+}
+
+.ps {
+    position: absolute;
+    top: 20%;
+    left: 65%;
+    font-size: 200px;
+}
+
+.ps-bold {
+    position: relative;
+    top: 15%;
+    left: 50%;
+    font-weight: 800;
+    font-family: 'Oswald', sans-serif;
+    font-size: 80px;
+}
+
+.toper-body {
+    position: absolute;
+    top: 15%;
+    left: 40%;
+    width: 200px;
+    height: 200px;
+    border-radius:50%; 
+    background-color:whitesmoke;
+    -webkit-box-shadow: 3px 3px 17px -4px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 3px 3px 17px -4px rgba(0, 0, 0, 0.75);
+    box-shadow: 3px 3px 17px -4px rgba(0, 0, 0, 0.75);
+    z-index: 99;
+}
+.news-img{
+    position: relative;
+    width: 130px;
+    height: auto;
+    top: 17%;
+    left: 18%;
+     
+}
+.top-m{
+    margin-top: 15%;
+}
+.b-weight{
+    width: 130px;
+    height: auto;
+    border-radius:50%; 
+    border: 5px solid green;
+}
+.img-center{
+    width: 150px;
+    height: auto;
+    margin: 30px auto 20px auto;
+}
+.card-center{
+    margin-left: auto;
+    margin-right: auto;
+}
+.upload-sucess{
+    margin-top: 30%;
+    width: 200px;
+    height: auto;
+    position: relative;
+    
 }

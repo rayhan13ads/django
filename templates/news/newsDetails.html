@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+
+{% block _body %}
+<div class="container">
+        <div class="jumbotron">
+                <img src="{{object.image.url}}" class="img-fluid" alt="">
+                <hr class="my-2">
+                <h1 class="display-3">{{object.title}}</h1>
+                <h5 class="card-subtitle mb-3 text-muted">{{object.subdescription}}</h5>
+                <p class="lead">{{object.descirption}}</p>
+                
+        </div>
+</div>
+{% endblock _body %}
+  

@@ -56,15 +56,15 @@
                                 <a class="nav-link" href="#a">About Us</a>
                             </li>
                             <li class="nav-item dropdown navCustom">
-                                <a class="nav-link" href="#h">
+                                <a class="nav-link" href="#service">
                                     Services
                                 </a>
                             </li>
                             <li class="nav-item navCustom">
-                                <a class="nav-link" href="#">News</a>
+                                <a class="nav-link" href="{% url 'news:newslist' %}">News</a>
                             </li>
                             <li class="nav-item navCustom">
-                                <a class="nav-link" href="#">Join Us/Career </a>
+                                <a class="nav-link" href="{% url 'jobs' %}">Join Us</a>
                             </li>
                             <li class="nav-item navCustom">
                                 <a class="nav-link" href="#c">Contact us </a>
@@ -247,7 +247,7 @@
                         </div>
                     </div>
                 </div>
-                <section class="feature wow slideInLeft" id="h" data-wow-offset="160">
+                <section class="feature wow slideInLeft" id="service" data-wow-offset="160">
                     <div class="container p-0">
                         <div class="row">
                             <div class="col-lg-5 col-md-5 offset-md-1 offset-lg-1 pic">
@@ -255,13 +255,89 @@
                             </div>
                             <div class="col-lg-6 col-md-6 text-left bg-damp righte" data-aos="fade-left">
                                 <h3>Management System Software</h3>
-                                <p>Vitae natoque dictum etiam semper magnis enim feugiat amet curabitur tempor orci
-                                    penatibus.
-                                    Tellus erat mauris ipsum fermentum etiam vivamus eget. Nunc nibh morbi quis fusce
-                                    lacus.</p>
-                                <a class="btn btn-outline-primary btn-a" href="{% url 'management' %}">Read more</a>
+                                <p>Now a day’s management systems software has turned to the icon of great management
+                                    systems for your business or any other businesses. It is easy to measure your
+                                    business growth at any stage. We work manually on profit or lose. So, what about if
+                                    we say “it’s time to change”?
+                                </p>
+                                <a class="btn btn-outline-success btn-a" id="btn1" data-toggle="collapse" href="#collapseExample1"
+                                    role="button" aria-expanded="false" aria-controls="collapseExample1">Read more</a>
                             </div>
 
+                        </div>
+
+                    </div>
+                    <div class="collapse" id="collapseExample1">
+                        <div class="card-custom card-bg1">
+                            <p>
+                                Now a day’s management systems software has turned to the icon of great management
+                                systems for your business or any other businesses. It is easy to measure your business
+                                growth at any stage. We work manually on profit or lose. So, what about if we say “it’s
+                                time to change”? Management system softwareis revalued all over the world. Every
+                                high-growth business grapples with decisions around the best business system to manage
+                                its expanding operations. Proper planning of an integrated business management software
+                                system often takes a back seat to short-term revenue acceleration goals. As a
+                                consequence, various disparate applications are installed at different points in time
+                                in various functional areas, resulting in business process inefficiencies and software
+                                integration challenges. But how did these problems arise in the first place, and how
+                                can they be avoided?
+                                A rapidly growing company can quickly become entangled with a complex application
+                                landscape. When starting out, companies can first come up with next step In the quest
+                                to acquire more customers, companies then put in standalone opportunity management
+                                systems, along with separate systems for resolving customer support issues. Inventory
+                                management, order management and fulfillment systems get addressed with disparate
+                                software and spreadsheets.
+                                Business caused challenges in lack of proper Management such as wasted employee
+                                productions, Lack of real time visibility ,high cost of hired employees, increased
+                                demand low productions.
+                                To overcome those problems using intergraded software Application can definitely help
+                                you out.
+                                Se, rising some questions on mind. How can a software can help you out? For better
+                                understanding. We will highlight some point.
+                                To keep your business growing at the dramatic rates you plan for, it is essential to
+                                have your business software applications integrated around a single codebase, database
+                                and business process. The advantages of designing your systems in this manner yield
+                                tremendous cost savings and improved business productivity, including:
+                            </p>
+                            <h3>Process efficiency across your organization: </h3>
+                            <p>
+                                There are some process that you perform every working day to your business like;
+                                Managing the business environment , fulfillment ,inventories, invoices, cash
+                                collection, expenses total ,final consolidation etc. If your business big enough, you
+                                have staffs to perform the task individually, Which is costly. An intergraded software
+                                Application can handle all this task properly more than you expect.
+                            </p>
+                    
+                            <h3>Dramatically improved visibility: </h3>
+                            <p>
+                                Real time visibility is important to make decision. When information can be accessed
+                                easily from almost anywhere. It is really an advanced step toward a great business
+                                Management. Applications are better informed and can make more accurate to the given
+                                tasks.
+                                Saving cost and times: with no longer having procure signing or approval the
+                                application can have enough time to inform you current situation at any time. Saving
+                                cost of hiring a person.
+
+                            </p>
+                            
+                            <h3>Accelerate the business growth:</h3>
+                            <p>
+                                With an integrated software system, expansion to multiple locations and additional
+                                sales channels can be accomplished a lot faster because of unified order and accounting
+                                management processes and data. Companies can also upsell and cross-sell more
+                                efficiently to their existing customer base because of the improved visibility they
+                                obtain.
+                            </p>
+                            <br>
+                            <p>There are some Management system software that civilized can design for you As your
+                                requirement</p>
+                            <ol>
+                                <li>School management systems</li>
+                                <li>Management system for medical </li>
+                                <li>Shop inventory or POS systems</li>
+                                <li>Factory inventory management </li>
+                                <li>Personal management</li>
+                            </ol>
                         </div>
                     </div>
                 </section>
@@ -270,17 +346,50 @@
                         <div class="row">
                             <div class="col-lg-6 col-md-6  text-right bg-damw left query1" data-aos="fade-right">
                                 <h3>Desktop Applications</h3>
-                                <p>Vitae natoque dictum etiam semper magnis enim feugiat amet curabitur tempor orci
-                                    penatibus.
-                                    Tellus erat mauris ipsum fermentum etiam vivamus eget. Nunc nibh morbi quis fusce
-                                    lacus.</p>
-                                <a class="btn btn-outline-primary btn-a1" href="{% url 'desktop' %}">Read more</a>
+                                <p>
+                                    Applications, software in its most general sense, is a set of instructions or
+                                    programs instructing a computer to do specific tasks or solving problems. Software
+                                    is a generic term used to describe computer programs.
+                                </p>
+                                <a class="btn btn-outline-success btn-a" data-toggle="collapse" href="#collapseExample2"
+                                    role="button" id="btn2" aria-expanded="false" aria-controls="collapseExample2">Read
+                                    more</a>
                             </div>
                             <div class="col-lg-5 col-md-5   pic query2">
                                 <a href="#" class=" icon fas fa-chalkboard"></a>
                             </div>
                         </div>
                     </div>
+                    <div class="collapse" id="collapseExample2">
+                        <div class="card-custom card-bg5">
+                            <p>
+                                Applications, software in its most general sense, is a set of instructions or programs
+                                instructing a computer to do specific tasks or solving problems. Software is a generic
+                                term used to describe computer programs. Scripts, applications, programs and a set of
+                                instructions are all terms often used to describe software.
+                            </p>
+                            <ul>
+                                <li>It runs on a PC operating system (Windows, Mac, Linux, etc.)</li>
+                                <li>It has a graphical user interface</li>
+                                <li>It does not run inside a web browser.</li>
+
+                            </ul>
+                            <p>
+                                It can be a bit difficult to tell the difference between web and desktop apps sometimes
+                                because web applications can launch desktop applications, and desktop applications can
+                                send and receive data over the Internet. Indeed, web browsers are themselves desktop
+                                applications.
+                            </p>
+                            <p>
+                                What does the "desktop" part of that mean? The "desktop" comes from what is called the
+                                desktop metaphor. The idea was to make it easier for humans to use computers by giving
+                                them a graphical user interface that was similar to things in the real world. So, if
+                                the computer was going to be used for business productivity, then try to make the user
+                                feel like she is working in an office. If you work in an office, you have a desk. On
+                                the desktop, you have the things you are working on (folders containing documents, like
+                                spreadsheets, letters, memos, etc.).
+                            </p>
+                        </div>
                 </section>
                 <section class="feature before-after wow slideInLeft" data-wow-offset="160">
                     <div class="container p-0">
@@ -294,10 +403,18 @@
                                     penatibus.
                                     Tellus erat mauris ipsum fermentum etiam vivamus eget. Nunc nibh morbi quis fusce
                                     lacus.</p>
-                                <a class="btn btn-outline-primary btn-a" href="{% url 'mobile' %}">Read more</a>
+                                <a class="btn btn-outline-success btn-a" data-toggle="collapse" href="#collapseExample3"
+                                    role="button" id="btn3" aria-expanded="false" aria-controls="collapseExample3">Read
+                                    more</a>
                             </div>
                         </div>
                     </div>
+                    <div class="collapse" id="collapseExample3">
+                        <div class="card-custom card-bg3">
+                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson
+                            ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt
+                            sapiente ea proident.
+                        </div>
                 </section>
                 <section class="feature wow slideInRight query" data-wow-offset="160">
                     <div class="container p-0">
@@ -308,13 +425,21 @@
                                     penatibus.
                                     Tellus erat mauris ipsum fermentum etiam vivamus eget. Nunc nibh morbi quis fusce
                                     lacus.</p>
-                                <a class="btn btn-outline-primary btn-a1" href="{% url 'webapp' %}">Read more</a>
+                                <a class="btn btn-outline-success btn-a" data-toggle="collapse" href="#collapseExample4"
+                                    role="button" id="btn4" aria-expanded="false" aria-controls="collapseExample4">Read
+                                    more</a>
                             </div>
                             <div class="col-lg-5 col-md-5   pic query2">
                                 <a href="#" class=" icon fa fa-code"></a>
                             </div>
                         </div>
                     </div>
+                    <div class="collapse" id="collapseExample4">
+                        <div class="card-custom card-bg2">
+                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson
+                            ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt
+                            sapiente ea proident.
+                        </div>
                 </section>
                 <section class="feature wow slideInLeft" data-wow-offset="160">
                     <div class="container p-0">
@@ -328,10 +453,18 @@
                                     penatibus.
                                     Tellus erat mauris ipsum fermentum etiam vivamus eget. Nunc nibh morbi quis fusce
                                     lacus.</p>
-                                <a class="btn btn-outline-primary btn-a" href="{% url 'digital' %}">Read more</a>
+                                <a class="btn btn-outline-success btn-a" data-toggle="collapse" href="#collapseExample5"
+                                    role="button" id="btn5" aria-expanded="false" aria-controls="collapseExample5">Read
+                                    more</a>
                             </div>
                         </div>
                     </div>
+                    <div class="collapse" id="collapseExample5">
+                        <div class="card-custom card-bg4">
+                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson
+                            ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt
+                            sapiente ea proident.
+                        </div>
                 </section>
                 <section class="feature wow slideInRight query" data-wow-offset="160">
                     <div class="container p-0">
@@ -342,13 +475,21 @@
                                     penatibus.
                                     Tellus erat mauris ipsum fermentum etiam vivamus eget. Nunc nibh morbi quis fusce
                                     lacus.</p>
-                                <a class="btn btn-outline-primary btn-a1" href="{% url 'network' %}">Read more</a>
+                                <a class="btn btn-outline-success btn-a" data-toggle="collapse" href="#collapseExample6"
+                                    role="button" id="btn6" aria-expanded="false" aria-controls="collapseExample6">Read
+                                    more</a>
                             </div>
                             <div class="col-lg-5 col-md-5   pic query2">
                                 <a href="#" class=" icon fa fa-signal"></a>
                             </div>
                         </div>
                     </div>
+                    <div class="collapse" id="collapseExample6">
+                        <div class="card-custom card-bg6">
+                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson
+                            ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt
+                            sapiente ea proident.
+                        </div>
                 </section>
             </section>
         </section>
@@ -386,7 +527,7 @@
         <section id="getintouch">
             <div class="container p-0">
                 <div class="row">
-                    <div class="col-lg-12 wow fadeIn" id="c">
+                    <div class="col-lg-12 wow fadeIn" id="contact">
                         <h2>Get in touch</h2>
                     </div>
                 </div>
@@ -480,11 +621,14 @@
     </footer>
     <!--Footer end-->
     <!--Javascript Area-->
+
     <script src="{% static 'js/jquery.js' %}"></script>
     <script src="{% static 'js/bootstrap.min.js' %}"></script>
     <script src="{% static 'js/venobox.min.js' %}"></script>
     <script src="{% static 'js/jquery.counterup.min.js' %}"></script>
+    <script src="{% static 'js/hidden.js' %}"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
         crossorigin="anonymous"></script>
     <script>

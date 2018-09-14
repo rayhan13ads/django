@@ -280,7 +280,7 @@ fecture
     height: 400px;
     background: #fff url('/static/images/socila-bg.jpg') no-repeat;
     background-attachment: fixed;
-    background-size:cover;
+    background-size: cover;
 }
 
 /*getintouch starts*/
@@ -436,7 +436,7 @@ fecture
     box-shadow: 10px 2px 38px -10px rgba(0, 0, 0, 0.75);
 }
 
-/*getintouch ends*/
+/*getintouch ends */
 #myBtn {
     display: none;
     position: fixed;
@@ -806,7 +806,7 @@ label {
 
 .footer-list a {
     color: #c6c6c6;
-    font-family: 'Oswald', sans-serif; 
+    font-family: 'Oswald', sans-serif;
     font-size: 18px;
     line-height: 2;
 }
@@ -842,21 +842,52 @@ label {
     color: #fff;
     border: .5px solid white;
 }
-.footer-logo{
+
+.footer-logo {
     position: relative;
     top: 40%;
-    left:60%;
+    left: 60%;
     width: 75px;
     height: 5rem;
 }
-.footer-logo-text{
+
+.footer-logo-text {
     position: relative;
-    top:50%;
+    top: 50%;
     left: 48%;
     color: #339b73;
     font-family: 'Oswald', sans-serif;
 }
-.footer-logo-text span{
+
+.footer-logo-text span {
     margin: 5px;
     color: #fff;
+}
+
+.card-custom {
+    margin: 2% 0 2% 0;
+    width: 100%;
+    height: auto;
+    color: #fff;
+    padding: 3% 10% 3% 10%;
+    font-size: 20px;
+    text-align: justify;
+}
+.card-bg1{
+    background-color: #339b73;
+}
+.card-bg2{
+    background-color:#5D4037;
+}
+.card-bg3{
+    background-color: #64B5F6;
+}
+.card-bg4{
+    background-color: #AFB42B;
+}
+.card-bg5{
+    background-color: #834eb4;
+}
+.card-bg6{
+    background-color: #b47f4e;
 }

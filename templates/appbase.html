@@ -1,5 +1,5 @@
 <!DOCTYPE html>
- {% load staticfiles %}
+{% load staticfiles %}
 <html lang="en">
 
 <head>
@@ -21,6 +21,7 @@
     <link rel="stylesheet" href="{% static 'fonts/Oswald-Regular.ttf' %}">
     <link rel="stylesheet" href="{% static 'fonts/Metamorphous-Regular.ttf' %}">
     <link rel="stylesheet" href="{% static 'css/about.css' %}">
+    <link rel="stylesheet" href="{% static 'css/jobs.css' %}">
     <link href="https://fonts.googleapis.com/css?family=Indie+Flower|Oswald" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Courgette" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Kaushan+Script" rel="stylesheet">
@@ -55,30 +56,38 @@
                                 </a>
                             </li>
                             <li class="nav-item navCustom">
-                                <a class="nav-link" href="">About Us</a>
+                                <a class="nav-link" href="{% url 'about' %}">About Us</a>
                             </li>
-                            <li class="nav-item dropdown navCustom">
-                                <a class="nav-link dropdown-toggle" href="#h" id="navbarDropdown" role="button"
+                            <li class="nav-item navCustom">
+                                <a class="nav-link font-hover" href="{% url 'home' %}#service">
+                                    Services
+                                </a>
+                                <!--
+
+                                <a class="nav-link dropdown-toggle" href="" id="navbarDropdown" role="button"
                                     data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                     Services
                                 </a>
-                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                    <a class="dropdown-item" href="{% url 'management' %}">Management System Software</a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">    
+                                    <a class="dropdown-item" href="{% url 'home' %}#h">Management System Software</a>
                                     <a class="dropdown-item" href="{% url 'desktop' %}">Desktop Applications</a>
                                     <a class="dropdown-item" href="{% url 'mobile' %}">Mobile Applications</a>
                                     <a class="dropdown-item" href="{% url 'webapp' %}">Web Applications</a>
                                     <a class="dropdown-item" href="{% url 'digital' %}">Digital Marketing</a>
                                     <a class="dropdown-item" href="{% url 'network' %}">Networking</a>
                                 </div>
+
+                               -->
+
                             </li>
                             <li class="nav-item navCustom">
-                                <a class="nav-link" href="#">News</a>
+                                <a class="nav-link" href="{% url 'news:newslist' %}">News</a>
                             </li>
                             <li class="nav-item navCustom">
-                                <a class="nav-link" href="{% url 'jobs' %}">Join Us/Career </a>
+                                <a class="nav-link" href="{% url 'jobs' %}">Join Us</a>
                             </li>
                             <li class="nav-item navCustom">
-                                <a class="nav-link" href="#c">Contact us </a>
+                                <a class="nav-link" href="{% url 'home' %}#contact">Contact us </a>
                             </li>
                         </ul>
                     </div>
@@ -102,59 +111,6 @@
     </main>
     <!--Footer Start-->
     <footer>
-        <section id="getintouch">
-            <div class="container p-0">
-                <div class="row">
-                    <div class="col-lg-12 wow fadeIn">
-                        <h2>Get in touch</h2>
-                    </div>
-                </div>
-            </div>
-            <div class="container mt-4 p-0" id="c">
-                <div class="row">
-                    <div class="col-lg-6 col-md-6 col-sm-6" data-aos="zoom-in" data-wow-offset="160">
-                        <form method="post">
-                            {% csrf_token %}
-                            <div class="form-group">
-                                <label for="exampleInputPassword1">Name</label>
-                                <input type="text" class="form-control" name="name" id="exampleInputPassword1"
-                                    placeholder="Name">
-                            </div>
-                            <div class="form-group">
-                                <label for="exampleInputEmail1">Email address</label>
-                                <input type="email" name="email" class="form-control" id="exampleInputEmail1"
-                                    aria-describedby="emailHelp" placeholder="Enter email">
-                            </div>
-
-                            <div class="form-group uparea">
-                                <label for="exampleFormControlTextarea1">Message</label>
-                                <textarea class="form-control" name="message" id="exampleFormControlTextarea1" rows="3"></textarea>
-                            </div>
-                            <button type="submit" class="btn-liquid">
-                                <span class="inner">Send</span>
-                            </button>
-                        </form>
-                    </div>
-                    <div class="col-lg-6 col-md-6 col-sm-6 wow 	slideInUp" data-aos="fade-left" data-wow-offset="160">
-                        <ul>
-                            <li>
-                                <i class="fa fa-home"></i>
-                                <p>Address</p>
-                                <p>House#6,Road#12,Sector#10 Uttara,Dhaka-1230</p>
-                            </li>
-                            <li>
-                                <i class="fa fa-phone"></i>
-                                <p>Lorem ipsum dolor sit amet.</p>
-                            </li>
-                            <li>
-                                <i class="fa fa-envelope"></i>
-                                <p>Lorem ipsum dolor sit amet.</p>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </section>
         <section class="footer-up">
             <div class="container">
                 <div class="row">
@@ -206,6 +162,7 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
         crossorigin="anonymous"></script>
+    <script src="{% static 'js/fileupload.js' %}"></script>
     <script>
         AOS.init();
     </script>
