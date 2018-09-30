@@ -7,6 +7,9 @@ class UploadFileForm(forms.ModelForm):
         fields = ['name', 'file_name']
         widgets = {
         'name':forms.TextInput(attrs = {'class': 'form-control','placeholder':'Enter your Name', 'id':'name'}),
-        'file_name':forms.FileInput( attrs = {'class': 'form-control-file', 'id':'filepath'})
+        'file_name':forms.FileInput( attrs = {'class': 'form-control-file', 'id':'filepath','data-validation':'mime size', 
+		 'data-validation-allowing':'doc, docx, pdf' ,
+		 'data-validation-max-size':'2M'})
         }
 
+    

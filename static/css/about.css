@@ -8,10 +8,10 @@
 }
 
 .about-textStyle {
-    font-size: 25px;
+    font-size: 18px;
     text-align: justify;
     text-justify: inter-word;
-    font-family: 'Oswald', sans-serif;
+    font-family: sans-serif;
     margin: 0 auto 5% auto;
 }
 
@@ -137,3 +137,11 @@
 .j-top-m{
     margin-top: 10%;
 }
+.error {
+    color: red;
+    margin-left: 5px;
+  }
+   
+label.error {
+    display: inline;
+  }

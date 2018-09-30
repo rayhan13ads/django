@@ -9,69 +9,35 @@
     <div class="col">
         <!--about Header Start-->
         <section class="jobs-header pt-5">
-            <h1 class="ps-bold display-2">JOBS</h1>
+            <h1 class="ps-bold">JOBS</h1>
             <h1 class="ps">&</h1>
         </section>
         <section>
             <h1 class="display-1 text-center" data-aos="fade-up" data-aos-anchor-placement="top-bottom">We're Hiring!!</h1>
             <div class="container">
                 <ul class="j-ul">
+                    
+                    {% for obj in obj_list %}
                     <li class="mt-1">
-                        <div class="row">
-                            <div class="col-sm2">
-                                <div class="j-box">
-                                    <div class="j-positionBox">
-                                        <img src="{% static 'images/fornt.png' %}" class="img-fulid j-img-size" alt="">
+                            <div class="row">
+                                <div class="col-sm2">
+                                    <div class="j-box">
+                                        <div class="j-positionBox">
+                                            <img src="{{obj.job_file_name.url}}" class="img-fulid j-img-size" alt="">
+                                        </div>
+    
                                     </div>
-
                                 </div>
-                            </div>
-                            <div class="col">
-                                <div class="j-box1" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">
-                                    <h5>
-                                        Forntend Developer.
-                                    </h5>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="mt-3">
-                        <div class="row">
-                            <div class="col-sm2">
-                                <div class="j-box">
-                                    <div class="j-positionBox">
-                                        <img src="{% static 'images/ex15.png' %}" class="img-fulid j-img-size" alt="">
+                                <div class="col">
+                                    <div class="j-box1" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">
+                                        <h5>
+                                            {{obj.jobTitle}}
+                                        </h5>
                                     </div>
-
                                 </div>
                             </div>
-                            <div class="col">
-                                <div class="j-box1" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">
-                                    <h5>
-                                        Asp.net mvc and Full-Stack Developer
-                                    </h5>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="mt-3">
-                        <div class="row">
-                            <div class="col-sm2">
-                                <div class="j-box">
-                                    <div class="j-positionBox">
-                                        <img src="{% static 'images/design.png' %}" class="img-fulid j-img-size" alt="">
-                                    </div>
-
-                                </div>
-                            </div>
-                            <div class="col">
-                                <div class="j-box1" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">
-                                    <h5>
-                                        Graphics Designer </h5>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
+                        </li>
+                    {% endfor %}
                 </ul>
             </div>
         </section>
@@ -81,56 +47,58 @@
                 <div class="row mt-5 mb-5">
 
                     <div class="col-md-3">
-                        <div class="card bg-danger" data-aos="zoom-in-down">
+                        <div class="card bg-danger h-100" data-aos="zoom-in-down">
                             <div class="card-body">
                                 <div class="img-center">
                                     <img src="{% static 'images/p-cv.png' %}" class="b-weight" alt="">
                                 </div>
-                                <h2 class="card-title text-center">Drop Your CV to Us</h2>
+                                <h2 class="card-title text-center text-light">Drop Your CV to Us</h2>
+                                <p class="card-text text-light h6">Drop your CV to the box given below and upload it.
+                                    You
+                                    will be notifying once it uploaded, our team will review it. </p>
                             </div>
                         </div>
                     </div>
                     <div class="col-md-3">
-                        <div class="card bg-info" data-aos="zoom-in-down">
+                        <div class="card bg-info h-100" data-aos="zoom-in-down">
                             <div class="card-body">
                                 <div class="img-center">
                                     <img src="{% static 'images/p-contact.png' %}" class="b-weight" alt="">
                                 </div>
-                                <h2 class="card-title text-center">Let Us Contact With You</h2>
-                                <p class="card-text">
-                                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsam minima ducimus
-                                    dolores nesciunt repellat dicta, fuga, necessitatibus labore nam odit, minus amet
-                                    at incidunt eius totam voluptatem. Accusantium, at laborum?
+                                <h2 class="card-title text-center text-light">Let Us Contact With You</h2>
+                                <p class="card-text text-light h6">
+                                    After review it. You will be contracted soon as your given mobile/E-mail address.
+                                    Please keep patient and wait for our response
                                 </p>
                             </div>
                         </div>
                     </div>
                     <div class="col-md-3">
-                        <div class="card bg-primary" data-aos="zoom-in-down">
+                        <div class="card bg-primary h-100" data-aos="zoom-in-down">
                             <div class="card-body">
                                 <div class="img-center">
                                     <img src="{% static 'images/p-interview.png' %}" class="b-weight" alt="">
                                 </div>
-                                <h2 class="card-title text-center">Introduce Your Self to Us With A Short Meeting</h2>
-                                <p class="card-text">
-                                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsam minima ducimus
-                                    dolores nesciunt repellat dicta, fuga, necessitatibus labore nam odit, minus amet
-                                    at incidunt eius totam voluptatem. Accusantium, at laborum?
+                                <h2 class="card-title text-center text-light">Introduce Your Self to Us With A Short
+                                    Meeting</h2>
+                                <p class="card-text text-light h6">
+                                    Selected candidates will get call from team Civilized, for a general interview at
+                                    our office. There may have some simple question about your carrier and experience.
                                 </p>
                             </div>
                         </div>
                     </div>
                     <div class="col-md-3">
-                        <div class="card bg-success" data-aos="zoom-in-down">
+                        <div class="card bg-success h-100" data-aos="zoom-in-down">
                             <div class="card-body">
                                 <div class="img-center">
                                     <img src="{% static 'images/p-success.png' %}" class="b-weight" alt="">
                                 </div>
-                                <h2 class="card-title text-center">Get The Job...</h2>
-                                <p class="card-text">
-                                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsam minima ducimus
-                                    dolores nesciunt repellat dicta, fuga, necessitatibus labore nam odit, minus amet
-                                    at incidunt eius totam voluptatem. Accusantium, at laborum?
+                                <h2 class="card-title text-center text-light">Get The Job...</h2>
+                                <p class="card-text text-light h6">
+                                    For Your kind information, Civilized believe on practical skills, you are not
+                                    required to have such education background related with computer. If you are
+                                    talented and dedicated to work then congratulations!!! Welcome to team civilized
                                 </p>
                             </div>
                         </div>
@@ -145,8 +113,6 @@
                                 <div class="col">
                                     <div class="img-center">
                                         <img src="{% static 'images/cv.png' %}" class="img-fluid" alt="">
-                                        <img src="{% static 'images/success.png' %}" id="upload-sucess" class="upload-sucess"
-                                            alt="">
                                     </div>
                                     <div class="col mt-5">
                                         <form method="POST" class="m-5" enctype="multipart/form-data">
@@ -165,8 +131,15 @@
                                         </form>
 
                                         {% if success == True %}
+                                        <div class="img-center">
+                                            <img src="{% static 'images/success.png' %}" id="upload-sucess" class="upload-sucess"
+                                                alt="">
+                                        </div>
+
                                         <div class="alert alert-success" role="alert">
+
                                             <p class="text">CV Uploaded</p>
+
                                         </div>
                                         {% else %}
                                         <div class="alert alert-danger" role="alert">

@@ -7,7 +7,7 @@ from django.core.mail import EmailMessage
 from django.template.loader import get_template
 from django.http import HttpResponseRedirect
 from civilized_app.form import UploadFileForm
-from .models import FileUploadModel
+from .models import FileUploadModel, JobsProvied
 
 
 # index page
@@ -40,11 +40,12 @@ def HomePage(request):
 # About Page
 
 
-class AboutView(TemplateView):
-    template_name = "about.html"
+class PrivacyView(TemplateView):
+    template_name = "privacy.html"
 
 
 def jobsPage(request):
+    model = JobsProvied.objects.all()
     success = False
     if request.method == 'POST':
         form = UploadFileForm(request.POST or None, request.FILES or None)
@@ -56,6 +57,8 @@ def jobsPage(request):
     context = {
         "form": form,
         "success": success,
+        "obj_list":model,
+        
     }
     return render(request, 'jobs.html', context)
 

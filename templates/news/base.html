@@ -41,13 +41,21 @@
         <div class="row">
             <!--logo-->
             <div class="col-md-4">
-                <img src="{% static 'images/civilizedlogo.png' %}" alt="" class="logo" srcset="">
-                <h4 class="logo-text">Civilized Technologies <span>|</span></h4>
+                    <a href="{% url 'home' %}">
+                            <img src="{% static 'images/civilizedlogo.png' %}" alt="" class="logo" srcset="">
+                    </a>
+                   <a href="{% url 'home' %}">
+                        <h4 class="logo-text">Civilized Technologies <span>|</span></h4>
+                   </a>
+                   
             </div>
             <!--navbar start-->
             <div class="col-md-8">
                 <nav class="navbar navbar-expand-lg navbar-dark">
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                        </button>
+                    <div class="collapse navbar-collapse" id="navbarText">
                         <ul class="navbar-nav mr-auto">
                             <li class="nav-item active navCustom">
                                 <a class="nav-link font-hover" href="{% url 'home' %}">Home
@@ -55,29 +63,12 @@
                                 </a>
                             </li>
                             <li class="nav-item navCustom">
-                                <a class="nav-link" href="{% url 'about' %}">About Us</a>
+                                <a class="nav-link" href="{% url 'home' %}#about">About Us</a>
                             </li>
                             <li class="nav-item navCustom">
                                 <a class="nav-link font-hover" href="{% url 'home' %}#service">
                                     Services
                                 </a>
-                                <!--
-
-                                <a class="nav-link dropdown-toggle" href="" id="navbarDropdown" role="button"
-                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                    Services
-                                </a>
-                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">    
-                                    <a class="dropdown-item" href="{% url 'home' %}#h">Management System Software</a>
-                                    <a class="dropdown-item" href="{% url 'desktop' %}">Desktop Applications</a>
-                                    <a class="dropdown-item" href="{% url 'mobile' %}">Mobile Applications</a>
-                                    <a class="dropdown-item" href="{% url 'webapp' %}">Web Applications</a>
-                                    <a class="dropdown-item" href="{% url 'digital' %}">Digital Marketing</a>
-                                    <a class="dropdown-item" href="{% url 'network' %}">Networking</a>
-                                </div>
-
-                               -->
-
                             </li>
                             <li class="nav-item navCustom">
                                 <a class="nav-link" href="{% url 'news:newslist' %}">News</a>
@@ -110,41 +101,25 @@
     </main>
     <!--Footer Start-->
     <footer>
-        <section class="footer-up">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-6">
-                        <div class="row mt-6">
-                            <div class="col-m-2">
-                                <ul class="footer-ul">
-                                    <li class="footer-list"><a href="">Link</a></li>
-                                    <li class="footer-list"><a href="">Link</a></li>
-                                    <li class="footer-list"><a href="">Link</a></li>
-                                    <li class="footer-list"><a href="">Link</a></li>
-                                </ul>
-                            </div>
-                            <div class="col-m-2">
-                                <ul class="footer-ul">
-                                    <li class="footer-list"><a href="">Contact Us</a></li>
-                                    <li class="footer-list"><a href="">About Us</a></li>
-                                    <li class="footer-list"><a href="">Link</a></li>
-                                    <li class="footer-list"><a href="">Link</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col">
+            <section class="footer-up">
+                    <div class="container">
                         <div class="row">
-                            <div class="col">
+                            <div class="col-md-6">
+                                <ul class="footer-ul">
+                                        <li class="footer-list"><a href="{% url 'home' %}#contact">Contact Us</a></li>
+                                        <li class="footer-list"><a href="{% url 'home' %}#about ">About Us</a></li>
+                                        <li class="footer-list"><a href="{% url 'news:newslist' %}">News</a></li>
+                                        <li class="footer-list"><a href="{% url 'jobs' %}">Jobs</a></li>
+                                        <li class="footer-list"><a href="{% url 'privacy' %}">Privacy and policy</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-md-6 footer-logo-l">
                                 <img src="{% static 'images/civilizedlogo.png' %}" alt="" class="footer-logo" srcset="">
                                 <h4 class="footer-logo-text"><span>|</span>Civilized Technologies<span>|</span></h4>
                             </div>
                         </div>
                     </div>
-                </div>
-
-            </div>
-        </section>
+                </section>
         <section class="footer-bar">
             <div class="footer-text">
                 <strong>

@@ -1,10 +1,247 @@
-@media screen and (max-width:544px){
+
+@media screen and (max-width:450px){
+    header{
+        height: 50px;
+    }
+    .img2{
+        height: 230px;
+    }
+    .cus-card,.cus-card1,.cus-card2{
+        height: 100px;
+        width: 100%;
+        float: left;
+    }
+    .slogan{
+        height: 40px;
+        width: 30%;
+    }
+    .slogan-div {
+        position: relative;
+        display: inline;
+        width: 100%;
+        height: auto;
+        margin: 3%;
+    }
+    
+    .h4-center {
+        width: 100%;
+        font-size: 5px;
+    }
+    .sm-size{
+        margin: 0 0 0 10px; 
+        width: 30%;
+        height: auto;
+    }
+    .section-about{
+        height: 150px;
+    }
+    .about-main,.about-main1,.hid{
+        display: none;
+    }
+    .btn-a{
+        margin: 0 10px 10px 0;
+    }
+    .bg-program{
+        height: 200px;
+    }
+    .l-size{
+        margin-top: 30%;
+        width: 50px;
+    }
+    .cons{
+        width: 250px;
+        margin-left: 15%;
+    }
+    .l-img{
+        width: 40px;
+        height: auto;
+    }
+    .get-m{
+        margin: 0 0 0 40px;
+    }
+    .InUp{
+     position: relative;
+     top: 100px;
+    }
+    #getintouch{
+       height: 690px;
+       display: inline-block;
+    }
+    .footer-up{
+        position: relative;
+        height: 200px;
+    }
+    .footer-ul{
+        top: 10%;
+    }
+    .footer-logo{
+        display: none;
+    }
+    .footer-logo-text{
+        display: none;
+    }
+    .footer-text{
+        margin: 0 0 0 15px;
+    }
+    .logo{
+        position: relative;
+        top: 10px;
+        left:0;
+        width: 30px;
+        height: 2rem;
+    }
+    .logo-text{
+        position: absolute;
+        top: 13px;
+        left: 70px;
+        font-size: 20px;
+    }
+    .navbar-toggler{
+        position: absolute;
+        top: -25px;
+        right: 5px;
+    }
+    .navCustom {
+        background-color: rgb(54, 54, 54);
+        display: block;
+        text-align: center;
+        padding: 2px 3px;
+        text-decoration: none;
+        font-size: 13px;
+        font-family: 'Oswald', sans-serif;
+    }
+    .jobs-header{
+        height: 180px !important;
+    }
+    .ps {
+        position: absolute;
+        top: 30px !important;
+        left: 65%;
+        font-size: 40px !important;
+    }
+    .ps-bold {
+        position: relative;
+        top: -30% !important;
+        left: 50%;
+        font-weight: 200;
+        font-family: 'Oswald', sans-serif;
+        font-size: 30px !important;
+    }
+    .navCustom:hover {
+        background-color: rgb(80, 163, 80);
+        text-decoration: none;
+        font-size: 16px; 
+        color:#000;
+    }
+  
+    .jobs-header {
+        
+        height: 29.5rem;
+        
+    }
+    .display-1{
+        font-size: 40px;
+    }
+   
+}
+@media screen and ( min-width: 451px) and (max-width:850px){
     header{
         height: 3rem;
     }
+    .navCustom {
+        background-color: rgb(54, 54, 54);
+        display: block;
+        text-align: center;
+        padding: 5px 3px;
+        text-decoration: none;
+        font-size: 15px;
+        font-family: 'Oswald', sans-serif;
+    }
+    .navCustom:hover {
+        background-color: rgb(80, 163, 80);
+        text-decoration: none;
+        font-size: 16px; 
+        color:#000;
+    }
+    .navbar-toggler{
+        position: absolute;
+        top: 5px;
+        right: 5px;
+    }
     .logo{
-       left:0;
+        top: 10%;
+        left:10%;
         height: 2rem;
     }
-
+    .logo-text{
+        top: 10%;
+        left: 40%;
+        width: 80%;
+    }
+    .img2{
+        height: 300px;
+    }
+   
+    .bg-program{
+        height: 200px;
+    }
+    .l-size{
+        margin-top: 10%;
+        width: 90px;
+    }
+    .footer-logo{
+        display: none;
+    }
+    .footer-logo-text{
+        display: none;
+    }
+    .cons{
+        width: 500px;
+        margin-left: 20%;
+    }
+    .l-img{
+        width: 70px;
+        height: auto;
+    }
+    .get-m{
+        margin: 0 0 0 40px;
+    }
+    .slideInUp{
+        margin: 15% 0 0 0;
+    }
+    #getintouch{
+       height: 700px;
+       display: inline-block;
+    }
+    .footer-logo{
+        left: 40%;
+        top:70%;
+        width: 40px;
+        height: auto;
+    }
+    .footer-logo-text{
+        top: 72%;
+        left: 15%;
+    }
+    .footer-text{
+        margin: 0 0 0 30%;
+    }
+    .btn-a{
+        margin: 0 10px 10px 0;
+    }
+    .ps {
+        position: absolute;
+        top: 27% !important;
+        left: 65%;
+        font-size: 60px !important;
+    }
+    .ps-bold {
+        position: relative;
+        top: 10% !important;
+        left: 50%;
+        font-weight: 200;
+        font-family: 'Oswald', sans-serif;
+        font-size: 50px !important;
+    }
+   
 }

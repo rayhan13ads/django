@@ -30,22 +30,29 @@
 </head>
 
 <body>
-    <button onclick="topFunction()" id="myBtn" title="Go to top">
-        <i class="fas fa-angle-double-up"></i>
-    </button>
+
 
     <!--header start-->
     <header>
         <div class="row">
             <!--logo-->
             <div class="col-md-4">
-                <img src="{% static 'images/civilizedlogo.png' %}" alt="" class="logo" srcset="">
-                <h4 class="logo-text">Civilized Technologies <span>|</span></h4>
+                    <a href="{% url 'home' %}">
+                            <img src="{% static 'images/civilizedlogo.png' %}" alt="" class="logo" srcset="">
+                    </a>
+                   <a href="{% url 'home' %}">
+                        <h4 class="logo-text">Civilized Technologies <span>|</span></h4>
+                   </a>
+                   
             </div>
             <!--navbar start-->
             <div class="col-md-8">
                 <nav class="navbar navbar-expand-lg navbar-dark">
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText"
+                        aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarText">
                         <ul class="navbar-nav mr-auto">
                             <li class="nav-item active navCustom">
                                 <a class="nav-link font-hover" href="#">Home
@@ -53,7 +60,7 @@
                                 </a>
                             </li>
                             <li class="nav-item navCustom">
-                                <a class="nav-link" href="#a">About Us</a>
+                                <a class="nav-link" href="#about">About Us</a>
                             </li>
                             <li class="nav-item dropdown navCustom">
                                 <a class="nav-link" href="#service">
@@ -81,6 +88,9 @@
     </header>
     <!--header End-->
     <main>
+        <button onclick="topFunction()" id="myBtn" title="Go to top">
+            <i class="fas fa-angle-double-up"></i>
+        </button>
         <!--Slider start-->
         <section class="slide-section">
             <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
@@ -116,7 +126,7 @@
         <section class="section-about">
             <div class="w-sizer">
                 <div class="row">
-                    <div class="col-md-4">
+                    <div class="col-md-4 sm-size">
                         <div class="cus-card">
                             <img src="{% static 'images/critive.png'%}" class="slogan" alt="">
                             <div class="slogan-div">
@@ -125,7 +135,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-4">
+                    <div class="col-md-4 sm-size">
                         <div class="cus-card1">
                             <img src="{% static 'images/idea.png'%}" class="slogan" alt="">
                             <div class="slogan-div">
@@ -134,7 +144,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-4">
+                    <div class="col-md-4 sm-size">
                         <div class="cus-card2">
                             <img src="{% static 'images/coding.png'%}" class="slogan" alt="">
                             <div class="slogan-div">
@@ -163,7 +173,7 @@
                 </div>
             </div>
         </section>
-        <section id="a">
+        <section id="about">
             <div class="row">
                 <div class="col-md-6 about-main">
                     <div class="dot-net" data-aos="fade-left">
@@ -250,11 +260,11 @@
                 <section class="feature wow slideInLeft" id="service" data-wow-offset="160">
                     <div class="container p-0">
                         <div class="row">
-                            <div class="col-lg-5 col-md-5 offset-md-1 offset-lg-1 pic">
+                            <div class="col-lg-5 col-md-5 offset-md-1 offset-lg-1 pic hid">
                                 <a href="#" class="icon fas fa-chart-line"></a>
                             </div>
                             <div class="col-lg-6 col-md-6 text-left bg-damp righte" data-aos="fade-left">
-                                <h3>Management System Software</h3>
+                                <h3>Application and Platforms</h3>
                                 <p>Now a day’s management systems software has turned to the icon of great management
                                     systems for your business or any other businesses. It is easy to measure your
                                     business growth at any stage. We work manually on profit or lose. So, what about if
@@ -307,7 +317,7 @@
                                 have staffs to perform the task individually, Which is costly. An intergraded software
                                 Application can handle all this task properly more than you expect.
                             </p>
-                    
+
                             <h3>Dramatically improved visibility: </h3>
                             <p>
                                 Real time visibility is important to make decision. When information can be accessed
@@ -319,7 +329,7 @@
                                 cost of hiring a person.
 
                             </p>
-                            
+
                             <h3>Accelerate the business growth:</h3>
                             <p>
                                 With an integrated software system, expansion to multiple locations and additional
@@ -341,11 +351,11 @@
                         </div>
                     </div>
                 </section>
-                <section class="feature wow slideInRight query" data-wow-offset="160">
+                <section class="feature slideInRight query">
                     <div class="container p-0">
                         <div class="row">
-                            <div class="col-lg-6 col-md-6  text-right bg-damw left query1" data-aos="fade-right">
-                                <h3>Desktop Applications</h3>
+                            <div class="col-md-6 text-right bg-damw" data-aos="fade-right">
+                                <h3>Enterprise innovative solution </h3>
                                 <p>
                                     Applications, software in its most general sense, is a set of instructions or
                                     programs instructing a computer to do specific tasks or solving problems. Software
@@ -355,7 +365,7 @@
                                     role="button" id="btn2" aria-expanded="false" aria-controls="collapseExample2">Read
                                     more</a>
                             </div>
-                            <div class="col-lg-5 col-md-5   pic query2">
+                            <div class="col-lg-5 hid  pic">
                                 <a href="#" class=" icon fas fa-chalkboard"></a>
                             </div>
                         </div>
@@ -394,11 +404,11 @@
                 <section class="feature before-after wow slideInLeft" data-wow-offset="160">
                     <div class="container p-0">
                         <div class="row">
-                            <div class="col-lg-5 col-md-5 offset-md-1  offset-lg-1 pic">
+                            <div class="col-lg-5 col-md-5 offset-md-1 hid  offset-lg-1 pic">
                                 <a href="#" class="image1 icon fa fa-mobile"></a>
                             </div>
                             <div class="col-lg-6 col-md-6  text-left righte bg-damx1" data-aos="fade-left">
-                                <h3>Mobile Applications</h3>
+                                <h3>Data Management</h3>
                                 <p>Vitae natoque dictum etiam semper magnis enim feugiat amet curabitur tempor orci
                                     penatibus.
                                     Tellus erat mauris ipsum fermentum etiam vivamus eget. Nunc nibh morbi quis fusce
@@ -420,7 +430,7 @@
                     <div class="container p-0">
                         <div class="row">
                             <div class="col-lg-6 col-md-6  text-right bg-damw1 left query1" data-aos="fade-right">
-                                <h3>Web Applications</h3>
+                                <h3>Web Infrastructure</h3>
                                 <p>Vitae natoque dictum etiam semper magnis enim feugiat amet curabitur tempor orci
                                     penatibus.
                                     Tellus erat mauris ipsum fermentum etiam vivamus eget. Nunc nibh morbi quis fusce
@@ -429,7 +439,7 @@
                                     role="button" id="btn4" aria-expanded="false" aria-controls="collapseExample4">Read
                                     more</a>
                             </div>
-                            <div class="col-lg-5 col-md-5   pic query2">
+                            <div class="col-lg-5 col-md-5 hid  pic query2">
                                 <a href="#" class=" icon fa fa-code"></a>
                             </div>
                         </div>
@@ -444,11 +454,11 @@
                 <section class="feature wow slideInLeft" data-wow-offset="160">
                     <div class="container p-0">
                         <div class="row">
-                            <div class="col-lg-5 col-md-5 offset-md-1 offset-lg-1 pic">
+                            <div class="col-lg-5 offset-md-1 hid offset-lg-1 pic">
                                 <a href="#" class="image icon fas fa-paper-plane "></a>
                             </div>
-                            <div class="col-lg-6 col-md-6 text-left bg-damp1 righte" data-aos="fade-left">
-                                <h3>Digital Advertisement</h3>
+                            <div class="col-lg-6 text-left bg-damp1 righte" data-aos="fade-left">
+                                <h3>Deep Networking</h3>
                                 <p>Vitae natoque dictum etiam semper magnis enim feugiat amet curabitur tempor orci
                                     penatibus.
                                     Tellus erat mauris ipsum fermentum etiam vivamus eget. Nunc nibh morbi quis fusce
@@ -470,7 +480,7 @@
                     <div class="container p-0">
                         <div class="row">
                             <div class="col-lg-6 col-md-6  text-right bg-damx left query1" data-aos="fade-right">
-                                <h3>Networking</h3>
+                                <h3>Digital Market Function </h3>
                                 <p>Vitae natoque dictum etiam semper magnis enim feugiat amet curabitur tempor orci
                                     penatibus.
                                     Tellus erat mauris ipsum fermentum etiam vivamus eget. Nunc nibh morbi quis fusce
@@ -479,7 +489,7 @@
                                     role="button" id="btn6" aria-expanded="false" aria-controls="collapseExample6">Read
                                     more</a>
                             </div>
-                            <div class="col-lg-5 col-md-5   pic query2">
+                            <div class="col-lg-5 col-md-5 hid  pic query2">
                                 <a href="#" class=" icon fa fa-signal"></a>
                             </div>
                         </div>
@@ -501,20 +511,20 @@
                 <div class="row">
                     <div class="col-sm-2 l-size" data-aos="flip-left">
                         <a href="https://www.facebook.com/civilizedtechnology/?ref=aymt_homepage_panel">
-                            <img src="{% static 'images/fb1.png' %}" width="80px" height="auto" alt="">
+                            <img src="{% static 'images/fb1.png' %}" class="l-img" alt="">
                         </a>
                     </div>
                     <div class="col-sm-2 l-size" data-aos="flip-left">
-                        <img src="{% static 'images/in1.png' %}" width="80px" height="auto" alt="">
+                        <img src="{% static 'images/in1.png' %}" class="l-img" alt="">
                     </div>
                     <div class="col-sm-2 l-size" data-aos="flip-left">
-                        <img src="{% static 'images/tw1.png' %}" width="80px" height="auto" alt="">
+                        <img src="{% static 'images/tw1.png' %}" class="l-img" alt="">
                     </div>
                     <div class="col-sm-2 l-size" data-aos="flip-left">
-                        <img src="{% static 'images/gh1.png' %}" width="80px" height="auto" alt="">
+                        <img src="{% static 'images/gh1.png' %}" class="l-img" alt="">
                     </div>
                     <div class="col-sm-2 l-size" data-aos="flip-left">
-                        <img src="{% static 'images/yt1.png' %}" width="80px" height="auto" alt="">
+                        <img src="{% static 'images/yt1.png' %}" class="l-img" alt="">
                     </div>
                 </div>
             </div>
@@ -527,14 +537,14 @@
         <section id="getintouch">
             <div class="container p-0">
                 <div class="row">
-                    <div class="col-lg-12 wow fadeIn" id="contact">
+                    <div class="col-lg-12 fadeIn" id="contact">
                         <h2>Get in touch</h2>
                     </div>
                 </div>
             </div>
             <div class="container mt-4 p-0">
                 <div class="row">
-                    <div class="col-lg-6 col-md-6 col-sm-6" data-aos="zoom-in" data-wow-offset="160">
+                    <div class="col-lg-6 get-m" data-aos="zoom-in" data-wow-offset="160">
                         <form method="post">
                             {% csrf_token %}
                             <div class="form-group">
@@ -558,7 +568,7 @@
                         </form>
                     </div>
                     <div class="col-lg-6 col-md-6 col-sm-6 wow 	slideInUp" data-aos="fade-left" data-wow-offset="160">
-                        <ul>
+                        <ul class="InUp">
                             <li>
                                 <i class="fa fa-home"></i>
                                 <p>Address</p>
@@ -581,35 +591,19 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-6">
-                        <div class="row mt-6">
-                            <div class="col-m-2">
-                                <ul class="footer-ul">
-                                    <li class="footer-list"><a href="">Link</a></li>
-                                    <li class="footer-list"><a href="">Link</a></li>
-                                    <li class="footer-list"><a href="">Link</a></li>
-                                    <li class="footer-list"><a href="">Link</a></li>
-                                </ul>
-                            </div>
-                            <div class="col-m-2">
-                                <ul class="footer-ul">
-                                    <li class="footer-list"><a href="">Contact Us</a></li>
-                                    <li class="footer-list"><a href="">About Us</a></li>
-                                    <li class="footer-list"><a href="">Link</a></li>
-                                    <li class="footer-list"><a href="">Link</a></li>
-                                </ul>
-                            </div>
-                        </div>
+                        <ul class="footer-ul">
+                            <li class="footer-list"><a href="{% url 'home' %}#contact">Contact Us</a></li>
+                            <li class="footer-list"><a href="{% url 'home' %}#about ">About Us</a></li>
+                            <li class="footer-list"><a href="{% url 'news:newslist' %}">News</a></li>
+                            <li class="footer-list"><a href="{% url 'jobs' %}">Jobs</a></li>
+                            <li class="footer-list"><a href="{% url 'privacy' %}">Privacy and policy</a></li>
+                        </ul>
                     </div>
-                    <div class="col">
-                        <div class="row">
-                            <div class="col">
-                                <img src="{% static 'images/civilizedlogo.png' %}" alt="" class="footer-logo" srcset="">
-                                <h4 class="footer-logo-text"><span>|</span>Civilized Technologies<span>|</span></h4>
-                            </div>
-                        </div>
+                    <div class="col-md-6 footer-logo-l">
+                        <img src="{% static 'images/civilizedlogo.png' %}" alt="" class="footer-logo" srcset="">
+                        <h4 class="footer-logo-text"><span>|</span>Civilized Technologies<span>|</span></h4>
                     </div>
                 </div>
-
             </div>
         </section>
         <section class="footer-bar">
